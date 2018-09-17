@@ -13,3 +13,13 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+deploy:
+  provider: releases
+  api_key:
+    secure: "FBnyab49M6dCslGwP9aOSNcVjBMyNhBFf86l4kOrNfKgKGyRS8sRXFi+90MRUA2Z0AAlYruFjQ8hXK4jf1BrWSiIu9NXc2MpqPWGeoywFwowlAySb+HqUH2MkNUlh/4pMZiC1yKMwzUWGzMTr5J9395AxhgtpIjMPhHu2ePSaM8Q++Qud6DZt3dEx5Nxpq1TCQMYK71BOkAW7wJw+42jEi5t0200IKohIKudoqZ58T5w73dRQzFMysT/7+GsKVAQkKbMdBaY/uqTl/7M04C/p+Ek1slNjYGUXs/Znj8bXabeb7tO/5V6u0+EjY0JlcSIt55Q6SMeuPJB2VT/qIx/GxODwteM7SUazURvUQdRuI2luUoTsne9LXJPakvH8B9DqPRx2jtjtBhCbUxSrP6glJ3+AizrEgQkeJ0tKl8BeTB/EMmPK+yTJPqXFj1si5jS7VpSFLs3PRjolvCjaDrWsKD9GEHs5qA9EeBlGh8VZ68ZJ7wijAyZeyYF9Tkv83Pck2Y2GJd8sAzE232RvNg1nwFCn7DsDz/3JHT51TdIQRqGD9fG/GKV29Jgsn934f/wG1QR2Ep3J6c5p3WGtt/0BDwy81eeFQpcpzifcZFQmQrMEThWvd/OZrYQqLsR0NhB7yb2ow2re66QdxWC8lZRyQdYQhyarz+98ycHmko7gj8="
+  file:
+    - LICENSE.md
+  skip_cleanup: true
+  on:
+    tags: true
