@@ -14,6 +14,7 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 
 before_deploy:
+  - sudo apt-get install jshon
   - ./script/build.sh
 deploy:
   provider: releases

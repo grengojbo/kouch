@@ -19,7 +19,8 @@ This is a test
 
 more test
 "
-    printf %q "$body"
+    jshon -s "$body"
+    # printf %q "$body"
     ;;
     name)
         echo "A cool name"
