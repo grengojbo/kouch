@@ -10,7 +10,7 @@ case "$1" in
         fi
     ;;
     body)
-    echo <<EOF
+    body="
 ## Testing
 
 This is a test
@@ -18,8 +18,8 @@ This is a test
 # a subhead
 
 more test
-EOF
-
+"
+    printf %q "$body"
     ;;
     name)
         echo "A cool name"
