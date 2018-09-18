@@ -19,4 +19,9 @@ This is a test
 
 more test
 EOF
+
+    ;;
+    name)
+        echo "A cool name"
+    ;;
 esac

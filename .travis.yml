@@ -22,6 +22,7 @@ deploy:
   file_glob: true
   file: build/*
   skip_cleanup: true
+  name: $(./script/octovar.sh name)
   prerelease: $(./script/octovar.sh prerelease)
   body: $(./script/octovar.sh body)
   on:
