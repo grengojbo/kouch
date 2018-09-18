@@ -9,4 +9,14 @@ case "$1" in
             echo false
         fi
     ;;
+    body)
+    echo <<EOF
+## Testing
+
+This is a test
+
+# a subhead
+
+more test
+EOF
 esac

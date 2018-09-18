@@ -23,5 +23,6 @@ deploy:
   file: build/*
   skip_cleanup: true
   prerelease: $(./script/octovar.sh prerelease)
+  body: $(./script/octovar.sh body)
   on:
     tags: true
