@@ -1,5 +1,6 @@
 test/pouch__all_dbs__/
 vendor
+.idea/
 test.*
 glide.lock
 node_modules
